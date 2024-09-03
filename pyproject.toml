@@ -1,0 +1,27 @@
+[project]
+name = "pybinding"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "caelansar", email = "819711623@qq.com" }
+]
+dependencies = [
+    "pip>=24.2",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["maturin>=1.2,<2.0"]
+build-backend = "maturin"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "ipython>=8.27.0",
+]
+
+[tool.maturin]
+python-source = "python"
+module-name = "pybinding._lowlevel"
+features = ["pyo3/extension-module"]
