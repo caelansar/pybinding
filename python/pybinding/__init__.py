@@ -1,3 +1,3 @@
-from pybinding._lowlevel import hello, AlgoRs
+from pybinding._lowlevel import hello, Algo, AlgoType, Matrix
 
-__all__ = ["hello", "AlgoRs"]
+__all__ = ["hello", "AlgoRs", "AlgoType", "Matrix"]

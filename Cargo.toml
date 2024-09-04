@@ -11,4 +11,5 @@ crate-type = ["cdylib"]
 [dependencies]
 pyo3 = "0.22.2"
 blake3 = "1.5.4"
-
+anyhow = "1.0.86"
+oneshot = "0.1.8"
